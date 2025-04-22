@@ -147,15 +147,15 @@ for(let i=0; i<input_2.length;i++){
     for(j=i;j<input_2.length;j++){
         if(elemento === input_2[j]){
             contatoreDuplicati++;
-            if(contatoreDuplicati > 1){
-                input_2.splice(j, 1)
-            }
         }
+    }
+    if(contatoreDuplicati < 2){
+        duplicati.push(elemento);
     }
 }   
 
 
-console.log(input_2)
+console.log(duplicati)
 // Output atteso: [1, 2, 3, 4]
 
 
